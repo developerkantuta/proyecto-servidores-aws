@@ -1,0 +1,41 @@
+# ==============================================================================
+# .gitignore — Archivos que NO deben subirse a GitHub
+# ==============================================================================
+
+# Archivos de estado de OpenTofu/Terraform (pueden contener secretos)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform/
+#terraform.lock.hcl
+
+# Archivos de variables con secretos
+*.tfvars
+*.tfvars.json
+
+# Archivos de planes de ejecución
+*.tfplan
+plan.out
+
+# Archivos de registro
+crash.log
+crash.*.log
+
+# Archivos de configuración de AWS CLI (nunca subir credenciales)
+.aws/
+credentials
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de respaldo
+*.bak
+*.tmp
